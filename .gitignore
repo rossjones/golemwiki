@@ -1,0 +1,7 @@
+src/github.com/bizerany/pq
+src/github.com/flosch/
+wiki.cfg
+.DS_Store
+bin/
+pkg/
+static/img/golem_mascot.png

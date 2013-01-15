@@ -1,0 +1,32 @@
+<br/>
+<div class="sidebar">
+
+    {% if page_menu %}
+    <h4>Pages</h4>
+    {% endif %}
+
+    <h4>Actions</h4>
+    <ul class="nav nav-pills nav-stacked">
+      <li {% if active == "add_group" %}class="active"{% endif %}>
+            <a href="/add/group">Add {{ _group_name }}</a>
+     </li>
+      <li {% if active == "add_page" %}class="active"{% endif %}>
+            <a href="/add/page">Add Page</a>
+      </li>
+      <li {% if active == "admin" %}class="active"{% endif %}>
+            <a href="/admin">Administration</a>
+      </li>
+    </ul>
+
+    <h4>Info</h4>
+    <ul class="nav nav-pills nav-stacked">
+      <li {% if active == "history" %}class="active"{% endif %}>
+        <a href="/history">Recent changes</a>
+      </li>
+      <li {% if active == "about" %}class="active"{% endif %}>
+            <a href="/about">About</a>
+      </li>
+      <li></li>
+      <li></li>
+    </ul>
+</div>
